@@ -7,4 +7,6 @@ import com.project.springboot.apirest.models.entity.Cliente;
 public interface IClienteService {
 
 	public List<Cliente> findAll();
+	
+	public void delete(Long id);
 }
