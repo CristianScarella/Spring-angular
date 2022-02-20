@@ -32,4 +32,10 @@ public class ClienteServiceImpl implements IClienteService{
 		clienteRepository.deleteById(id);
 	}
 
+	@Override
+	public Cliente save(Cliente cliente) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 }
