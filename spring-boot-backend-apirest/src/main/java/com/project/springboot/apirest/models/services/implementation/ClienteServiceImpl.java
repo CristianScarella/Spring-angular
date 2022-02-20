@@ -27,4 +27,9 @@ public class ClienteServiceImpl implements IClienteService{
 		return clienteRepository.findById(id).orElse(null);
 	}
 
+	@Override
+	public void delete(Long id) {
+		clienteRepository.deleteById(id);
+	}
+
 }
