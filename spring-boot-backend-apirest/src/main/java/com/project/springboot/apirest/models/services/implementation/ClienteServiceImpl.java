@@ -22,4 +22,9 @@ public class ClienteServiceImpl implements IClienteService{
 		return (List<Cliente>) clienteRepository.findAll();
 	}
 
+	@Override
+	public Cliente save(Cliente cliente) {
+		return clienteRepository.save(cliente);
+	}
+
 }
