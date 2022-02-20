@@ -22,4 +22,14 @@ public class ClienteServiceImpl implements IClienteService{
 		return (List<Cliente>) clienteRepository.findAll();
 	}
 
+	@Override
+	public Cliente findById(Long id) {
+		return clienteRepository.findById(id).orElse(null);
+	}
+
+	@Override
+	public Cliente save(Cliente clienteActual) {
+		return clienteRepository.save(clienteActual);
+	}
+
 }
